@@ -50,7 +50,7 @@
 {
     self = [super init];
     if (self) {
-        
+        _showCase = [NSMutableDictionary dictionary];
     }
     return self;
 }

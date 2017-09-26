@@ -11,6 +11,8 @@
 
 @interface UnderlinePen : NSObject <Product>
 
+- (instancetype)initWithDecorator:(NSString *)decoChar NS_DESIGNATED_INITIALIZER;
+- (instancetype)init NS_UNAVAILABLE;
 - (void)useWithString:(NSString *)string;
 - (id<Product>)createClone;
 

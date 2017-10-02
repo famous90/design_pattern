@@ -1,0 +1,16 @@
+//
+//  SideBorder.h
+//  DesignPattern_12_Decorator
+//
+//  Created by gyuyoung Hwang on 2017. 10. 2..
+//  Copyright © 2017년 famous90. All rights reserved.
+//
+
+#import "Border.h"
+
+@interface SideBorder : Border
+
+- (instancetype)initWithDisplay:(Display *)display character:(NSString *)character NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithDisplay:(Display *)display NS_UNAVAILABLE;
+
+@end

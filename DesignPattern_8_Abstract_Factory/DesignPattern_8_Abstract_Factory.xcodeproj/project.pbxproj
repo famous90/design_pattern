@@ -18,6 +18,9 @@
 		C169056F1F7D5A3800149A97 /* LinkTray.m in Sources */ = {isa = PBXBuildFile; fileRef = C169056E1F7D5A3800149A97 /* LinkTray.m */; };
 		C16905721F7D5C5700149A97 /* LinkPage.m in Sources */ = {isa = PBXBuildFile; fileRef = C16905711F7D5C5700149A97 /* LinkPage.m */; };
 		C16905751F7D5DC100149A97 /* TableFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C16905741F7D5DC100149A97 /* TableFactory.m */; };
+		C1CCD8EA1F80FD6900FBA469 /* TableLink.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CCD8E91F80FD6900FBA469 /* TableLink.m */; };
+		C1CCD8ED1F80FE4A00FBA469 /* TableTray.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CCD8EC1F80FE4A00FBA469 /* TableTray.m */; };
+		C1CCD8F01F81004700FBA469 /* TablePage.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CCD8EF1F81004700FBA469 /* TablePage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +58,12 @@
 		C16905711F7D5C5700149A97 /* LinkPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkPage.m; sourceTree = "<group>"; };
 		C16905731F7D5DC100149A97 /* TableFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableFactory.h; sourceTree = "<group>"; };
 		C16905741F7D5DC100149A97 /* TableFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableFactory.m; sourceTree = "<group>"; };
+		C1CCD8E81F80FD6900FBA469 /* TableLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableLink.h; sourceTree = "<group>"; };
+		C1CCD8E91F80FD6900FBA469 /* TableLink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableLink.m; sourceTree = "<group>"; };
+		C1CCD8EB1F80FE4A00FBA469 /* TableTray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableTray.h; sourceTree = "<group>"; };
+		C1CCD8EC1F80FE4A00FBA469 /* TableTray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableTray.m; sourceTree = "<group>"; };
+		C1CCD8EE1F81004700FBA469 /* TablePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TablePage.h; sourceTree = "<group>"; };
+		C1CCD8EF1F81004700FBA469 /* TablePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TablePage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +117,12 @@
 				C16905711F7D5C5700149A97 /* LinkPage.m */,
 				C16905731F7D5DC100149A97 /* TableFactory.h */,
 				C16905741F7D5DC100149A97 /* TableFactory.m */,
+				C1CCD8E81F80FD6900FBA469 /* TableLink.h */,
+				C1CCD8E91F80FD6900FBA469 /* TableLink.m */,
+				C1CCD8EB1F80FE4A00FBA469 /* TableTray.h */,
+				C1CCD8EC1F80FE4A00FBA469 /* TableTray.m */,
+				C1CCD8EE1F81004700FBA469 /* TablePage.h */,
+				C1CCD8EF1F81004700FBA469 /* TablePage.m */,
 			);
 			path = DesignPattern_8_Abstract_Factory;
 			sourceTree = "<group>";
@@ -138,7 +153,7 @@
 		C16905451F7D4D9400149A97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = famous90;
 				TargetAttributes = {
 					C169054C1F7D4D9400149A97 = {
@@ -169,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CCD8EA1F80FD6900FBA469 /* TableLink.m in Sources */,
 				C16905621F7D520600149A97 /* Page.m in Sources */,
 				C16905591F7D4DD400149A97 /* Item.m in Sources */,
 				C169055F1F7D515B00149A97 /* Tray.m in Sources */,
@@ -176,6 +192,8 @@
 				C16905721F7D5C5700149A97 /* LinkPage.m in Sources */,
 				C16905691F7D560E00149A97 /* ListFactory.m in Sources */,
 				C16905751F7D5DC100149A97 /* TableFactory.m in Sources */,
+				C1CCD8ED1F80FE4A00FBA469 /* TableTray.m in Sources */,
+				C1CCD8F01F81004700FBA469 /* TablePage.m in Sources */,
 				C16905661F7D541200149A97 /* Factory.m in Sources */,
 				C169056F1F7D5A3800149A97 /* LinkTray.m in Sources */,
 				C16905511F7D4D9400149A97 /* main.m in Sources */,
@@ -196,7 +214,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -204,7 +224,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -244,7 +268,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -252,7 +278,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

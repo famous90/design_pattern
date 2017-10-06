@@ -71,6 +71,7 @@
 - (NSInteger)fightWithHand:(Hand *)hand
 {
     if (self.handValue == hand.handValue) {
+        NSLog(@"test");
         return 0;
     } else if ((self.handValue + 1) % 3 == hand.handValue) {
         return 1;

@@ -64,6 +64,7 @@
 
 - (NSString *)description
 {
+    NSLog(@"description");
     return [[self class] names][self.handValue];
 }
 

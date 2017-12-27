@@ -25,6 +25,8 @@ int main(int argc, const char * argv[]) {
             Hand *nextHand2 = [p2 nextHand];
             if ([nextHand1 isStrongerThanHand:nextHand2]) {
                 NSLog(@"Winner: %@", p1);
+                NSLog(@"log");
+                NSLog(@"log3");
                 [p1 win];
                 [p2 lose];
             } else if ([nextHand1 isWeakerThanHand:nextHand2]) {

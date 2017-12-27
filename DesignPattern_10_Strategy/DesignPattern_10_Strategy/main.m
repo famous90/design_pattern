@@ -43,6 +43,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Total result: ");
         NSLog(@"%@", [p1 description]);
         NSLog(@"%@", [p2 description]);
+        
+        NSLog(@"changed");
     }
     return 0;
 }
